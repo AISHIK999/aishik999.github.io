@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title class="jura-font">Aishik Mukherjee</title>
+    <link rel="icon" type="image/x-icon" href="../public/icons/favicon.png">
+    <!--    Import CSS stylesheets-->
+    <link href="CSS/common-style.css" rel="stylesheet"/>
+    <link href="CSS/mouse-style.css" rel="stylesheet"/>
+    <link href="CSS/section-1-style.css" rel="stylesheet"/>
+    <link href="CSS/main-button-style.css" rel="stylesheet"/>
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+<!-- Mouse circle -->
+<div class="mouse-circle" id="mouse-circle"></div>
+<div class="mouse-dot" id="mouse-dot"></div>
+<!-- End of mouse circle -->
+
+<!-- page container -->
+<div class="container">
+    <!-- section 1 -->
+    <section class="section-1 center" id="Home">
+        <!--    Navigation-->
+        <nav class="navbar">
+            <a href="https://github.com/AISHIK999" class="navbar-link github">
+                <img src="icons/github.svg" alt="github">
+            </a>
+            <a href="https://www.facebook.com/aishik.mukherjee.503/" class="navbar-link facebook">
+                <img src="icons/facebook.svg" alt="facebook">
+            </a>
+            <a href="https://sourceforge.net/u/aishik999/profile/" class="navbar-link sourceforge">
+                <img src="icons/sourceforge.png" alt="sourceforge">
+            </a>
+            <a href="https://t.me/AISHIK999" class="navbar-link telegram">
+                <img src="icons/telegram.svg" alt="telegram">
+            </a>
+            <a href="https://www.instagram.com/aishik999/" class="navbar-link instagram">
+                <img src="icons/instagram.svg" alt="instagram">
+            </a>
+
+        </nav>
+        <!--    End navigation-->
+        <!--Background-->
+        <svg height="768" id="visual" version="1.1" viewBox="0 0 1366 768" width="1366"
+             xmlns="http://www.w3.org/2000/svg">
+            <g transform="translate(696.7411613666284 378.87367403185135)">
+                <path id="blob1"
+                      d="M169.1 -267.7C224.5 -260.9 278.5 -226.4 287.3 -177.2C296 -128 259.5 -64 233.5 -15C207.6 34 192.1 68 177.9 107.8C163.8 147.7 150.9 193.3 121.4 228.5C92 263.7 46 288.3 7 276.2C-32 264.1 -64 215.2 -93.2 179.9C-122.3 144.5 -148.6 122.8 -194.1 95C-239.6 67.3 -304.3 33.7 -314.6 -5.9C-324.8 -45.5 -280.6 -91 -246.9 -139.1C-213.1 -187.1 -189.8 -237.8 -150.4 -253.8C-111 -269.9 -55.5 -251.5 0.7 -252.6C56.8 -253.8 113.7 -274.5 169.1 -267.7"
+                      fill="#00FFFF"></path>
+            </g>
+            <g transform="translate(676.8752387128014 419.6503317845847)">
+                <path id="blob2"
+                        d="M167.8 -299C207.7 -267.7 223.3 -202.9 234 -147.4C244.7 -92 250.3 -46 251.2 0.5C252.1 47 248.1 94 226.1 129.8C204.1 165.6 164.1 190.2 123.4 211C82.7 231.8 41.3 248.9 -1.9 252.2C-45.2 255.6 -90.3 245.1 -135.8 227C-181.3 209 -227 183.2 -236.5 144.1C-245.9 105 -218.9 52.5 -218.8 0.1C-218.7 -52.3 -245.3 -104.7 -237.7 -147C-230.1 -189.2 -188.3 -221.5 -143 -249.7C-97.7 -277.8 -48.8 -301.9 7.6 -315C64 -328.2 128 -330.4 167.8 -299"
+                      fill="#00FFFF"></path>
+            </g>
+        </svg>
+        <script>
+            const tween = KUTE.fromTo(
+                '#blob1',
+                {path: '#blob1'},
+                {path: '#blob2'},
+                {repeat: 999, duration: 3000, yoyo: true}
+            ).start();
+        </script>
+        <!--End of background-->
+
+        <!-- logo -->
+        <a class="logo jura-font" href="#">Aishik Mukherjee</a>
+        <!-- end of logo -->
+
+        <!-- Animated circles -->
+<!--        <div class="circles">-->
+<!--            <div id="github" class="circle circle-1"></div>-->
+<!--            <div id="facebook" class="circle circle-2"></div>-->
+<!--            <div id="instagram" class="circle circle-3"></div>-->
+<!--            <div id="sourceforge" class="circle circle-4"></div>-->
+<!--        </div>-->
+
+        <h4 class="featured-text featured-text-1 jura-font">
+            Android<br />enthusiast
+        </h4>
+        <h4 class="featured-text featured-text-2 jura-font">
+            Web<br />enthusiast
+        </h4>
+        <div class="main-circle center">
+            <img alt="profile" src="landing/profile.jpg"/>
+        </div>
+        <!-- Animated circles -->
+<!--        TODO: Re-add the main button when the actual portfolio is made-->
+<!--        Main button-->
+<!--        <button class="comfortaa-font Main-button" onclick="">-->
+<!--            More-->
+<!--            <span>about me</span>-->
+<!--        </button>-->
+        <div class="quote">
+            <p>Look before, or you’ll find yourself behind</p>
+        </div>
+        <div class="speaker ">
+            <p>~Benjamin Franklin</p>
+        </div>
+
+
+    </section>
+    <!-- End of section 1 -->
+    <!-------------------------------------------------------------------------------------------------------->
+</div>
+<!-- End of page container -->
+
+<!--Import JavaScript files-->
+<script src="JavaScript/about-me-text.js"></script>
+<script src="JavaScript/animated-circle-script.js"></script>
+<script src="JavaScript/mouse-script.js"></script>
+
+
+<section class="background">
+</section>
+</body>
+</html>

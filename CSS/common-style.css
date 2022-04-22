@@ -1,0 +1,59 @@
+/* Import font family */
+/* Jura */
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap");
+/* Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/*Comfortaa*/
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+/* End import */
+
+/* --------------------------------------------------------------------------------------------------------- */
+
+/* Common style */
+.jura-font {
+    font-family: "Jura", sans-serif;
+}
+
+.poppins-font {
+    font-family: "Poppins", sans-serif;
+}
+
+.comfortaa-font {
+    font-family: "Comfortaa", cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+    cursor: none;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    /*background: black;*/
+    background: url("../background/background.svg") center fixed no-repeat;
+}
+
+#blob2{
+    visibility: hidden;
+}
+
+#visual{
+    position: absolute;
+    transform: translate(-1.5%, -10%);
+    z-index: 0;
+}

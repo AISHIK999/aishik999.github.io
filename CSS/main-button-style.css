@@ -1,0 +1,40 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700,400);
+
+
+button {
+    border: 5px solid orange;
+    background: #FAFA33;
+    color: black;
+    border-radius: 40px;
+    padding: 10px 20px 10px 50px;
+    overflow: hidden;
+    width: 200px;
+    transition: all 1.2s, border 0.5s 1.2s, box-shadow 0.3s 1.5s;
+    white-space: nowrap;
+    text-indent: 23px;
+    z-index: 1;
+    position: absolute;
+    bottom: 10%;
+    font-size: large;
+}
+button span {
+    left: 10%;
+    display: inline-block;
+    transform: translateX(300px);
+    font-size: large;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.1s 0.5s, transform 0.4s 0.5s;
+}
+button:hover {
+    text-indent: 0;
+    background: yellow;
+    color: black;
+    width: 250px;
+    border: 5px solid darkorange;
+    padding: 10px 20px;
+}
+button:hover span {
+    transform: translateX(0);
+    opacity: 1;
+}

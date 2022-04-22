@@ -1,0 +1,181 @@
+
+.section-1 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+/* logo */
+
+.logo {
+    position: absolute;
+    top: 2rem;
+    left: 5rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+/* end of logo */
+
+/* animated circle */
+
+.circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    /* grid-template-columns: repeat(column repeat times | size) */
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(rows repeat times | size) */
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.circle {
+    width: 22rem;
+    height: 22rem;
+    border-radius: 50%;
+    background-color: blue;
+    align-self: center;
+    justify-self: center;
+    opacity: 0.5;
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: left 2s, top 2s;
+}
+
+.circle-1 {
+    background: url(../landing/back1.jpg) center no-repeat;
+    background-size: cover;
+    background-clip: content-box;
+    border: 0.2rem dotted greenyellow;
+    margin-left: -10rem;
+}
+
+.circle-2 {
+    background: url(../landing/back2.jpg) center no-repeat;
+    background-size: cover;
+    background-clip: content-box;
+    border: 0.2rem dashed skyblue;
+    margin-right: -10rem;
+}
+
+.circle-3 {
+    background: url(../landing/back3.jpg) center no-repeat;
+    background-size: cover;
+    background-clip: content-box;
+    border: 0.7rem double orangered;
+    margin-left: -10rem;
+}
+
+.circle-4 {
+    background: url(../landing/back4.png) center no-repeat;
+    background-size: cover;
+    background-clip: content-box;
+    border: 0.5rem double yellow;
+    margin-right: -10rem;
+}
+
+.main-circle {
+    width: 40rem;
+    height: 40rem;
+    position: absolute;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: width 0.5s, height 0.5s;
+}
+
+.main-circle:hover {
+    width: 50rem;
+    height: 50rem;
+}
+
+.main-circle img {
+    /* This property can be tweaked to change the design of the image */
+    /*mix-blend-mode: lighten;*/
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: left 2s, top 2s;
+}
+
+/* end of animated circle */
+
+/* Featured text */
+.featured-text {
+    font-size: 2rem;
+    color: white;
+    text-transform: uppercase;
+    width: 0;
+    position: sticky;
+    top: 0;
+	transform: translateX(-200%);
+	opacity: 0;
+	animation: slide-in-anim 1.5s ease-out forwards;
+}
+
+.featured-text-1 {
+    margin: 0 auto 0 10rem;
+}
+
+.featured-text-2 {
+    margin: 0 22rem 0 auto;
+}
+
+@keyframes slide-in-anim {
+	20% {
+		opacity: 0;
+	}
+	60% {
+		transform: translateX(-45%);
+	}
+	75% {
+		transform: translateX(-52%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(-50%);
+	}
+}
+
+/* End of featured text */
+
+/*Navigation*/
+.navbar{
+    position: fixed;
+    top: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-right: 3rem;
+    z-index: 1;
+}
+
+.navbar-link{
+    margin: 0 0.75rem;
+    /*background-color: white;*/
+    border-radius: 50%;
+}
+
+/*End of navigation*/
+
+.quote{
+    position: fixed;
+    bottom: 8vh;
+    color: white;
+    font-style: italic;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.speaker{
+    position: fixed;
+    bottom: 3vh;
+    color: white;
+    font-size: 2rem;
+    margin-left: 60rem;
+}
