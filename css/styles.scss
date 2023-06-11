@@ -6,7 +6,7 @@
 }
 
 :root {
-    --color-primary: #000000;
+    --color-primary: #000;
     --color-secondary: #E34234;
     --color-white: #FFFFFF;
     --color-black: #000;
@@ -468,7 +468,7 @@ section {
             img {
                 filter: grayscale(0);
                 transform: scale(1.1);
-                box-shadow: 0px 4px 15px rgba(0,0,0,0.8);
+                box-shadow: 0 4px 15px rgba(0,0,0,0.8);
             }
         }
         img {
