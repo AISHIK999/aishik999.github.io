@@ -21,6 +21,7 @@
   --inverse: #fdf6e3;
   --br-sm-2: 14px;
   --box-shadow-1: 0 3px 15px rgba(0, 0, 0, .3);
+  --highlight: #45ffef;
 }
 
 .light-mode {
@@ -37,6 +38,7 @@
   --color-grey-6: #002b36;
   --icons: #fbf1c7;
   --inverse: #3c3836;
+  --highlight: #dc322f;
 }
 
 body {
@@ -161,7 +163,7 @@ section {
 }
 
 .highlight {
-  color: var(--color-secondary);
+  color: var(--highlight);
 }
 
 /*Header-content*/
