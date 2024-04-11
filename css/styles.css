@@ -6,36 +6,36 @@
 }
 
 :root {
-  --color-primary: #002b36;
-  --color-secondary: #2aa198;
+  --color-primary: #232136;
+  --color-secondary: #3e8fb0;
   --color-white: #fff;
   --color-black: #000;
-  --color-grey0: #eee8d5;
-  --color-grey-1: #93a1a1;
-  --color-grey-2: #eee8d5;
-  --color-grey-3: #657b83;
-  --color-grey-4: #586e75;
-  --color-grey-5: #073642;
-  --color-grey-6: #002b36;
+  --color-grey0: #e0def4;
+  --color-grey-1: #e0def4;
+  --color-grey-2: #e0def4;
+  --color-grey-3: #908caa;
+  --color-grey-4: #6e6a86;
+  --color-grey-5: #393552;
+  --color-grey-6: #2a273f;
   --icons: #fdf6e3;
   --inverse: #fdf6e3;
   --br-sm-2: 14px;
   --box-shadow-1: 0 3px 15px rgba(0, 0, 0, .3);
-  --highlight: #45ffef;
+  --highlight: #9ccfd8;
 }
 
 .light-mode {
-  --color-primary: #eee8d5;
-  --color-secondary: #dc322f;
+  --color-primary: #faf4ed;
+  --color-secondary: #ea9d34;
   --color-white: #000;
   --color-black: #fff;
-  --color-grey0: #eee8d5;
-  --color-grey-1: #93a1a1;
-  --color-grey-2: #002b36;
-  --color-grey-3: #657b83;
-  --color-grey-4: #586e75;
-  --color-grey-5: #abbbbb;
-  --color-grey-6: #002b36;
+  --color-grey0: #fffaf3;
+  --color-grey-1: #fffaf3;
+  --color-grey-2: #575279;
+  --color-grey-3: #f2e9e1;
+  --color-grey-4: #9893a5;
+  --color-grey-5: #e0d9d3;
+  --color-grey-6: #575279;
   --icons: #fbf1c7;
   --inverse: #3c3836;
   --highlight: #dc322f;
