@@ -50,7 +50,7 @@
   display: flex;
   align-items: center;
   color: var(--color-white);
-  background-color: var(--color-fg-5);
+  background-color: var(--color-fg-6);
   cursor: pointer;
   justify-content: center;
   width: 50px;
@@ -93,7 +93,7 @@
   padding: 0.8rem 1.1rem;
   outline: none;
   border: none;
-  background-color: var(--color-fg-5);
+  background-color: var(--color-fg-8);
   width: 100%;
   color: var(--color-white);
   resize: none;
