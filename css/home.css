@@ -114,7 +114,7 @@
 .header-content .right-header .image {
     border-radius: var(--br-sm-2);
     height: 100%;
-    width: 68%;
+    width: 75%;
     margin-left: 4rem;
     transition: all 0.4s ease-in-out;
     bottom: 0;
