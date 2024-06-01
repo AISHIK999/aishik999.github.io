@@ -1,0 +1,152 @@
+.port-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 3rem;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-top: 3rem;
+}
+
+.projects .project-item {
+  position: relative;
+  border-radius: 15px;
+  height:20rem;
+}
+
+.projects .project-item label {
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.projects .project-item img {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.projects .project-item .hover-items {
+  width: 100%;
+  height: 100%;
+  background-color: var(--highlight);
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.4s ease-in-out;
+}
+
+.projects .project-item .hover-items h3 {
+  font-size: 1.5rem;
+  color: var(--color-black);
+  margin: 0 0.5rem;
+  text-align: center;
+  /*margin-bottom: 1.5rem;*/
+}
+
+.projects .project-item .hover-items p {
+  color: var(--color-black);
+  /*margin-bottom: 1rem;*/
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.projects .project-item .hover-items .badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.projects .project-item .hover-items .badge img{
+  margin: 0 2px;
+}
+
+.projects .project-item .hover-items .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects .project-item .hover-items .icons .icon {
+  background-color: var(--color-fg);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.projects .project-item .hover-items .icons .icon i {
+  font-size: 1.5rem;
+  color: var(--color-white);
+  margin: 0 1rem;
+}
+
+.projects .project-item .hover-items .icons .icon:hover {
+  background-color: var(--color-white);
+}
+
+.projects .project-item .hover-items .icons .icon:hover i {
+  color: var(--color-black);
+}
+
+.project-item:hover .hover-items {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+@media screen and (max-width: 600px) {
+  .projects {
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 6rem;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media screen and (max-width: 660px) {
+  .projects {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .projects .image label {
+    text-align: center;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .projects .image p {
+    text-align: center;
+    display: block;
+  }
+}

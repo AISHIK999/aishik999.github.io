@@ -1,430 +1,476 @@
-<!doctype html>
-<html class="no-js" lang="en-us">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TRM84YRGD7"></script>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Aishik Mukherjee - Portfolio</title>
+  <!-- STYLESHEET -->
+  <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        referrerpolicy="no-referrer" rel="stylesheet"/>
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/navbar.css" rel="stylesheet">
+  <link href="css/home.css" rel="stylesheet">
+  <link href="css/about.css" rel="stylesheet">
+  <link href="css/projects.css" rel="stylesheet">
+  <link href="css/certificates.css" rel="stylesheet">
+  <link href="css/contact.css" rel="stylesheet">
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
     gtag('js', new Date());
 
     gtag('config', 'G-TRM84YRGD7');
   </script>
-  <meta charset="utf-8">
-  <title>Aishik Mukherjee | Portfolio</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
-  <link rel="stylesheet" href="css/styles.css">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-
-  <meta name="theme-color" content="#fafafa">
 </head>
 
-<body class="main-content">
+<body class="portfolio">
+<!-- NAVBAR -->
+<div class="navbar">
+  <div class="navbar-btn active-btn" data-id="home">
+    <i aria-label="home" class="fas fa-home" style="color:var(--icons)"></i>
+  </div>
+  <div aria-label="about" class="navbar-btn" data-id="about">
+    <i class="fas fa-user" style="color:var(--icons)"></i>
+  </div>
+  <div aria-label="projects" class="navbar-btn" data-id="projects">
+    <i class="fas fa-laptop" style="color:var(--icons)"></i>
+  </div>
+  <div aria-label="certificates" class="navbar-btn" data-id="certificates">
+    <i class="far fa-newspaper" style="color:var(--icons)"></i>
+  </div>
+  <div aria-label="contact" class="navbar-btn" data-id="contact">
+    <i class="fas fa-envelope-open" style="color:var(--icons)"></i>
+  </div>
+</div>
+<div class="theme-btn">
+  <i class="fas fa-moon" style="color:var(--icons)"></i>
+</div>
+<!-- END NAVBAR -->
 
-  <header class="container header active" id="home">
-    <div class="header-content">
-      <div class="left-header">
-        <div class="h-shape"></div>
-        <div class="image main-image">
-          <img src="https://ik.imagekit.io/AISHIK999/img/profile.png?updatedAt=1690137988372" alt="profile_pic">
-        </div>
+<!-- HOME -->
+<header class="container header active" id="home">
+  <div class="header-content">
+    <div class="left-header">
+      <div class="intro">
+        <span id="greeting">Hello 👋! I'm</span>
+        <h1 id="name">Aishik Mukherjee</h1>
+        <span id="typing"></span>
       </div>
-      <div class="right-header">
-        <br><br>
-        <h2 class="name">
-          Hey there!
-        </h2>
-        <p>
-          I'm <span class="highlight">Aishik Mukherjee</span> a versatile tech-enthusiast with diverse skillsets,
-          spanning across multiple domains . I have a stong foundation in <span class="highlight">GNU/Linux</span> and
-          experience in maintaining custom <span class="highlight">Android OS</span>.
-          <br><br>
-          My expertise also extends to building software using frameworks like
-          <span class="highlight">Django</span> and <span class="highlight">FastAPI</span>, and databases like <span
-            class="highlight">PostgreSQL</span>, <span class="highlight">MongoDB</span> and <span
-            class="highlight">DuckDB</span>.
-          Passionate about <span class="highlight">Machine Learning</span> and continuously exploring new opportunities
-          in the field.
+      <div class="btn-con">
+        <a class="main-btn"
+           href="https://ik.imagekit.io/AISHIK999/resume/Aishik%20Mukherjee%20resume.pdf?updatedAt=1717053875255"
+           target="_blank">
+          <span class="btn-text">Download résumé</span>
+          <span class="btn-icon"><i class="fas fa-download" style="color:var(--icons)"></i></span>
+        </a>
+      </div>
+      <div id="now-playing">
+        <p>Recently listened to 🎼:</p>
+        <img
+          src="https://lastfm-recently-played-readme-six.vercel.app/api?user=AISHIK999&count=1&header_size=none&bg_color=665c54">
+      </div>
+    </div>
+    <div class="right-header">
+      <div class="image profile-image">
+        <img alt="profile_pic"
+             src="https://ik.imagekit.io/AISHIK999/img/profile.png?updatedAt=1717054040781">
+      </div>
+    </div>
+  </div>
+</header>
+<!-- END HOME -->
 
+<main>
+  <!-- ABOUT -->
+  <section class="container about" id="about">
+    <div class="main-title">
+      <h2>About me</h2>
+    </div>
+    <!-- <div class="about-container"> -->
+    <!-- <div class="left-about"> -->
+    <div>
+      <div>
+        <br><br>
+        <p>
+          As a tech enthusiast, I've created a home-server setup that
+          combines cutting-edge software and
+          self-hosted services, including
+          a NAS powered by Nextcloud and a private Minecraft game server (online on
+          weekends only to keep my gaming time and electricity bills in check).
+          <br><br>
+          I've also implemented a DNS sinkhole with Pi-hole and a secure VPN
+          setup using Wireguard,
+          showcasing my skills in network maintenance and security.
+          <br><br>
+          Complementing these endeavors, I have
+          professional experience
+          in building automated workflows using Python, Docker, Power Automate, and Automation Anywhere,
+          as well as maintaining
+          databases like PostgreSQL and MariaDB. In the past, I've contributed to the CygnusOS project, a
+          custom Android ROM,
+          further demonstrating my passion for technology.
         </p>
+        <br><br>
         <div class="btn-con">
-          <a href="https://ik.imagekit.io/AISHIK999/img/Aishik_Mukherjee_Resume.pdf?updatedAt=1694020559668"
-            class="main-btn" target="_blank">
+          <a class="main-btn"
+             href="https://ik.imagekit.io/AISHIK999/resume/Aishik%20Mukherjee%20resume.pdf?updatedAt=1717053875255"
+             target="_blank">
             <span class="btn-text">Download résumé</span>
             <span class="btn-icon"><i class="fas fa-download" style="color:var(--icons)"></i></span>
           </a>
         </div>
         <br><br>
       </div>
-    </div>
-  </header>
-  <main>
-    <section class="container about" id="about">
-      <div class="main-title">
-        <h2>About <span>me</span><span class="bg-text">About me</span></h2>
+      <!-- <div class="right-about">
+      <div class="about-item">
+        <div class="abt-text">
+          <p class="large-text">130+</p>
+          <p class="small-text">Hours of<br/> Python</p>
+        </div>
       </div>
-      <!-- <div class="about-container"> -->
-      <!-- <div class="left-about"> -->
-      <div>
-        <div>
-          <br><br>
+      <div class="about-item">
+        <div class="abt-text">
+          <p class="large-text">30+</p>
+          <p class="small-text">Hours of<br/> Jupyter</p>
+        </div>
+      </div>
+      <div class="about-item">
+        <div class="abt-text">
+          <p class="large-text">460+</p>
+          <p class="small-text">GitHub <br/> Contributions</p>
+        </div>
+      </div>
+    </div> -->
+    </div>
+    <div class="about-stats">
+      <h4 class="stat-title">My Experience</h4>
+      <div class="coding-activity">
+        <p>Below is the time I spent programming over the past 7 days <span class="italics">(real-time
+                            updates)</span></span></p>
+        <div id="weekly-status">
+          <canvas id="weeklyChart"></canvas>
+        </div>
+        <br>
+        <p>Here are my top 10 programming languages with time spent on each <span class="italics">(updates
+                            at 12:00 AM daily)</span></span></p>
+        <div id="language-satus">
+          <canvas id="languageChart"></canvas>
+        </div>
+      </div>
+    </div>
+    <h4 class="stat-title">Professional Background</h4>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="tl-icon">
+          <i class="fas fa-briefcase" style="color:var(--icons)"></i>
+        </div>
+        <p class="tl-duration">2016 - 2020</p>
+        <h5>School<span> - Ramakrishna Vivekananda Mission Vidyabhawan, Barrackpore</span></h5>
+        <p>
+          Studied here for standards 9 through 12. Scored 100% in Mathematics in the Board Exams
+        </p>
+      </div>
+      <div class="timeline-item">
+        <div class="tl-icon">
+          <i class="fas fa-briefcase" style="color:var(--icons)"></i>
+        </div>
+        <p class="tl-duration">2020 - 2024</p>
+        <h5>College<span> - University of Engineering and Management, Kolkata</span></h5>
+        <p>
+          Bachelor's degree in Computer Science and Technology. Currently holding a CGPA of 9.2. Ranked
+          10th in
+          the
+          department during 2023 academic year.
+          <br>
+          Held AIR 4696 in GATE 2024 exam
+        </p>
+      </div>
+      <div class="timeline-item">
+        <div class="tl-icon">
+          <i class="fas fa-briefcase" style="color:var(--icons)"></i>
+        </div>
+        <p class="tl-duration">June 2023 - Current</p>
+        <h5>RPA developer intern<span> - Emami Limited</span></h5>
+        <p>
+          Automated repetitive tasks and streamlined complex workflows to enhance productivity and reduce
+          manual
+          errors. Collaborated with cross-functional teams, identified potential automation opportunities
+          and
+          worked
+          diligently to design, develop, and implement robotic process automation (RPA) solutions using
+          Automation
+          Anywhere, Power Automate and Python.
+          Besides this, I also worked on maintaining the RPA database.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- END ABOUT -->
+
+
+  <!--PROJECTS-->
+  <section class="container" id="projects">
+    <div class="main-title">
+      <h2><span>Portfolio</span></h2>
+    </div>
+    <p class="port-text">
+      Behold, the museum of my digital creations!
+    </p>
+    <div class="projects">
+      <div class="project-item">
+        <div class="image">
+          <img alt="" src="https://ik.imagekit.io/AISHIK999/img/port1.jpg?updatedAt=1690137988153">
+          <label>Templar Userbot</label>
+        </div>
+        <div class="hover-items">
+          <h3>Templar userbot</h3>
+          <br>
           <p>
-            Currently I'm pursuing a Bachelor's degree in Computer Science and Technology.
-            <br><br>
-            As a tech-enthusiast, who is still climbing down the Linux rabbit-hole, I have cultivated a home setup
-            combining cutting-edge softwares with multiple self-hosted services. At the core of it all, lies my
-            <span class="highlight"> NAS</span> powered by nextcloud - my digital vault.
-            Along that, I also have a private minecraft <span class="highlight">game server</span> that I use to play on
-            weekends (and by that I mean, ONLY
-            weekends. I tried running it 24x7. Couldn't handle the electricity bill :P).
-            <br><br>
-            Complementing above, I also hosted a <span class="highlight">DNS sinkhole</span> via Pi-hole and a <span
-              class="highlight">VPN setup</span>
-            implemented through Wireguard,
-            maintaining proper encryption standards and privacy.
-            All of the above prove my capabilities in maintaining and securing a network/server. But my skills are
-            nowhere limited to this.
-            <br><br>
-            I hold professional experience in building and deploying automated workflows
-            using <span class="highlight">Python</span>, <span class="highlight">Docker</span> and
-            software like <span class="highlight">Power Automate</span> & <span class="highlight">Automation Anywhere
-            </span>.
-            This extends to maintaining databases like <span class="highlight">PostgreSQL</span> and <span
-              class="highlight">MariaDB</span>.
-            <br><br>
-            In the past, I have worked on Android operating systems and kernels. Contributor to the <a
-              href="https://github.com/cygnus-rom" class="highlight">CygnusOS</a> project, a CAF based custom
-            Android
-            ROM.
-            <br><br>
-            My creations are present at <a href="https://www.github.com/AISHIK999" class="highlight">GitHub</a> & <a
-              href="https://sourceforge.net/projects/aishik999-builds/" class="highlight">SourceForge</a>.
+            A modular telegram userbot written in Python with a focus on performance and customization.
           </p>
-          <br><br>
-          <div class="btn-con">
-            <a href="https://ik.imagekit.io/AISHIK999/img/Aishik_Mukherjee_Resume.pdf?updatedAt=1694020559668"
-              class="main-btn" target="_blank">
-              <span class="btn-text">Download résumé</span>
-              <span class="btn-icon"><i class="fas fa-download" style="color:var(--icons)"></i></span>
+          <div class="badge">
+            <img alt="python"
+                 src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"
+                 style="height: 2rem; width: 6rem">
+            <img alt="docker"
+                 src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white"
+                 style="height: 2rem; width: 6rem">
+            <img alt="sqlite"
+                 src="https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white"
+                 style="height: 2rem; width: 6rem">
+          </div>
+
+          <div class="icons">
+            <a class="icon" href="https://github.com/AISHIK999/Templar_Userbot.git" target="_blank">
+              <i class="fab fa-github"></i>
             </a>
           </div>
-          <br><br>
-        </div>
-        <!-- <div class="right-about">
-        <div class="about-item">
-          <div class="abt-text">
-            <p class="large-text">130+</p>
-            <p class="small-text">Hours of<br/> Python</p>
-          </div>
-        </div>
-        <div class="about-item">
-          <div class="abt-text">
-            <p class="large-text">30+</p>
-            <p class="small-text">Hours of<br/> Jupyter</p>
-          </div>
-        </div>
-        <div class="about-item">
-          <div class="abt-text">
-            <p class="large-text">460+</p>
-            <p class="small-text">GitHub <br/> Contributions</p>
-          </div>
-        </div>
-      </div> -->
-      </div>
-      <div class="about-stats">
-        <h4 class="stat-title">My Experience</h4>
-        <h5>
-          A figure showing real time stats for the languages I am working with.
-          This is updated automatically everyday.
-        </h5>
-        <div class="wakatime">
-          <figure><embed src="https://wakatime.com/share/@AISHIK999/f9136244-8014-4433-bb94-f6cda7461aee.svg"></embed>
-          </figure>
         </div>
       </div>
-      <h4 class="stat-title">Professional Background</h4>
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="tl-icon">
-            <i class="fas fa-briefcase" style="color:var(--icons)"></i>
-          </div>
-          <p class="tl-duration">2016 - 2020</p>
-          <h5>School<span> - Ramakrishna Vivekananda Mission Vidyabhawan, Barrackpore</span></h5>
+
+      <div class="project-item">
+        <div class="image">
+          <img alt=""
+               src="https://ik.imagekit.io/AISHIK999/img/pexels-brett-sayles-4508751.jpg?updatedAt=1694020572071">
+          <label>Employee Database System</label>
+        </div>
+        <div class="hover-items">
+          <h3>Employee Database System</h3>
+          <br>
           <p>
-            Studied here for standards 9 through 12. Scored 100% in Mathematics in the Board Exams
+            CLI based employee database management system with a web admin-dashboard. CRUD operations. ACID compliant.
+
           </p>
-        </div>
-        <div class="timeline-item">
-          <div class="tl-icon">
-            <i class="fas fa-briefcase" style="color:var(--icons)"></i>
+          <div class="badge">
+            <img alt="python"
+                 src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"
+                 style="height: 2rem; width: 6rem">
+            <img alt="docker"
+                 src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white"
+                 style="height: 2rem; width: 6rem">
+            <img alt="mariadb"
+                 src="https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white"
+                 style="height: 2rem; width: 7rem">
           </div>
-          <p class="tl-duration">2020 - 2024</p>
-          <h5>College<span> - University of Engineering and Management, Kolkata</span></h5>
+
+          <div class="icons">
+            <a class="icon" href="https://github.com/AISHIK999/employee_database_system" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <div class="image">
+          <img alt=""
+               src="https://ik.imagekit.io/AISHIK999/img/pexels-anna-nekrashevich-6801648.jpg?updatedAt=1717228813140">
+          <label>E commerce review analysis using LLM</label>
+        </div>
+        <div class="hover-items">
+          <h3>E commerce review analysis using LLM</h3>
+          <br>
           <p>
-            Bachelor's degree in Computer Science and Technology. Currently holding a CGPA of 9.2. Ranked 10th in the
-            department during 2023 academic year.
-            <br>
-            Held AIR 4696 in GATE 2024 exam
+            Like the title suggests, use large language models like Gemini to perform sentiment analysis on reviews
+            scraped from Amazon.
           </p>
-        </div>
-        <div class="timeline-item">
-          <div class="tl-icon">
-            <i class="fas fa-briefcase" style="color:var(--icons)"></i>
+          <div class="badge">
+            <img alt="python"
+                 src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"
+                 style="height: 2rem; width: 6rem">
+            <img alt="selenium"
+                 src="https://img.shields.io/badge/-selenium-%43B02A?style=for-the-badge&logo=selenium&logoColor=white"
+                 style="height: 2rem; width: 6.5rem">
+            <img alt="llm"
+                 src="https://img.shields.io/badge/chatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white"
+                 style="height: 2rem; width: 6.5rem">
           </div>
-          <p class="tl-duration">June 2023 - Current</p>
-          <h5>RPA developer intern<span> - Emami Limited</span></h5>
+
+          <div class="icons">
+            <a class="icon" href="https://github.com/AISHIK999/e-commerce-review-analysis" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <div class="image">
+          <img alt="" src="https://ik.imagekit.io/AISHIK999/img/smartphone.jpg?updatedAt=1692291539943"><label>Android
+          Builds</label>
+        </div>
+        <div class="hover-items">
+          <h3>Android Builds</h3>
+          <br>
           <p>
-            Automated repetitive tasks and streamlined complex workflows to enhance productivity and reduce manual
-            errors. Collaborated with cross-functional teams, identified potential automation opportunities and worked
-            diligently to design, develop, and implement robotic process automation (RPA) solutions using Automation
-            Anywhere, Power Automate and Python.
-            Besides this, I also worked on maintaining the RPA database.
+            Custom Android kernel & ROM builds for various devices. Distributed over sourceforge.
           </p>
+          <div class="badge">
+            <img alt="android"
+                 src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white"
+                 style="height: 2rem; width: 7rem">
+            <img alt="bash"
+                 src="https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white"
+                 style="height: 2rem; width: 9rem">
+            <img alt="c"
+                 src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white"
+                 style="height: 2rem; width: 3rem">
+          </div>
+
+          <div class="icons">
+            <!--            <a class="icon" href="" target="_blank">-->
+            <!--              <i class="fab fa-github"></i>-->
+            <!--            </a>-->
+          </div>
         </div>
       </div>
-    </section>
 
+      <div class="project-item">
+        <div class="image">
+          <img alt="" src="https://ik.imagekit.io/AISHIK999/img/port7.jpg?updatedAt=1690137988146">
+          <label>Python Watcher</label>
+        </div>
+        <div class="hover-items">
+          <h3>Python Watcher</h3>
+          <br>
+          <p>
+            Chromium based webdriver instance to perform tasks anonymously.
+          </p>
+          <div class="badge">
+            <img alt="python"
+                 src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"
+                 style="height: 2rem; width: 6rem">
+            <img alt="selenium"
+                 src="https://img.shields.io/badge/-selenium-%43B02A?style=for-the-badge&logo=selenium&logoColor=white"
+                 style="height: 2rem; width: 7.5rem">
+            <img alt="edge"
+                 src="https://img.shields.io/badge/Edge-0078D7?style=for-the-badge&logo=Microsoft-edge&logoColor=white"
+                 style="height: 2rem; width: 5rem">
+          </div>
 
-    <section class="container" id="portfolio">
-      <div class="main-title">
-        <h2><span>Portfolio</span><span class="bg-text">Portfolio</span></h2>
+          <div class="icons">
+            <a class="icon" href="https://github.com/AISHIK999/python_watcher" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
       </div>
-      <p class="port-text">
-        Behold, the museum of my digital creations!
-      </p>
-      <div class="portfolios">
-        <div class="portfolio-item">
-          <div class="image">
-            <img src="https://ik.imagekit.io/AISHIK999/img/port1.jpg?updatedAt=1690137988153" alt="">
-            <label>Templar Userbot</label>
-            <br>
-            <p>
-              A modular telegram userbot template
-              <br>
-              [Python, Telethon, Docker]
-            </p>
+
+      <div class="project-item">
+        <div class="image">
+          <img src="https://ik.imagekit.io/AISHIK999/img/port2.png?updatedAt=1690137988325" alt="">
+          <label>Reinforcement Snake</label>
+        </div>
+        <div class="hover-items">
+          <h3>Reinforcement Snake</h3>
+          <br>
+          <p>
+            Machine learning model to play a game of snake.
+          </p>
+          <div class="badge">
+            <img alt="python"
+                 src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"
+                 style="height: 2rem; width: 6rem">
+            <img alt="pytorch"
+                 src="https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white"
+                 style="height: 2rem; width: 6.5rem">
+            <img alt="numpy"
+                 src="https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white"
+                 style="height: 2rem; width: 6rem">
           </div>
-          <div class="hover-items">
-            <h3>Source</h3>
-            <div class="icons">
-              <a href="https://github.com/AISHIK999/Templar_Userbot.git" class="icon" target="_blank">
-                <i class="fab fa-github"></i>
-              </a>
-            </div>
+
+          <div class="icons">
+            <a class="icon" href="https://github.com/AISHIK999/Reinforcement_snake/" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
           </div>
         </div>
-
-        <div class="portfolio-item">
-          <div class="image">
-            <img src="https://ik.imagekit.io/AISHIK999/img/pexels-brett-sayles-4508751.jpg?updatedAt=1694020572071"
-              alt="">
-            <label>Employee Database System</label>
-            <br>
-            <p>
-              CLI based employee database management system with a web admin-dashboard. CRUD operations. ACID compliant.
-              <br>
-              [Python, MariaDB, Docker]
-            </p>
-          </div>
-          <div class="hover-items">
-            <h3>Source</h3>
-            <div class="icons">
-              <a href="https://github.com/AISHIK999/employee_database_system" class="icon" target="_blank">
-                <i class="fab fa-github"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="portfolio-item">
-          <div class="image">
-            <img src="https://ik.imagekit.io/AISHIK999/img/smartphone.jpg?updatedAt=1692291539943" alt="">
-            <label>Android builds</label>
-            <br>
-            <p>
-              Custom Android OS and kernel builds distributed through sourceforge.
-              <br>
-              [Android, Bash, C]
-            </p>
-          </div>
-          <div class="hover-items">
-            <h3>Source</h3>
-            <div class="icons">
-              <a href="https://sourceforge.net/projects/aishik999-builds/" class="icon" target="_blank">
-                <i class="fa-regular fa-file"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="portfolio-item">
-          <div class="image">
-            <img src="https://ik.imagekit.io/AISHIK999/img/port7.jpg?updatedAt=1690137988146" alt="">
-            <label>Python Watcher</label>
-            <br>
-            <p>
-              A chromium based webdriver instance to perform tasks anonymously
-              <br>
-              [Python, Chromedriver, Selenium]
-            </p>
-          </div>
-          <div class="hover-items">
-            <h3>Source</h3>
-            <div class="icons">
-              <a href="https://github.com/AISHIK999/python_watcher" class="icon" target="_blank">
-                <i class="fab fa-github"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="portfolio-item">
-          <div class="image">
-            <img src="https://ik.imagekit.io/AISHIK999/img/port3.png?updatedAt=1690137988198" alt="">
-            <label>Amazon Review Analyzer</label>
-            <br>
-            <p>
-              Analyse amazon reviews' sentiment and store the data in a MariaDB database.
-              <br>
-              [Python, Docker, MariaDB]
-            </p>
-          </div>
-          <div class="hover-items">
-            <h3>Source</h3>
-            <div class="icons">
-              <a href="https://github.com/AISHIK999/python_watcher" class="icon" target="_blank">
-                <i class="fab fa-github"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="portfolio-item">
-          <div class="image">
-            <img src="https://ik.imagekit.io/AISHIK999/img/port8.jpg?updatedAt=1690140556810" alt="">
-            <label>Scripts and dotfiles</label>
-            <br>
-            <p>
-              A collection of my personal scripts and dotfiles for my linux desktop setup
-              <br>
-              [Fish, CSS, Lua]
-            </p>
-          </div>
-          <div class="hover-items">
-            <h3>Source</h3>
-            <div class="icons">
-              <a href="https://github.com/AISHIK999/scripts-n-dotfiles" class="icon" target="_blank">
-                <i class="fab fa-github"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="portfolio-item">
-          <div class="image">
-            <img src="https://ik.imagekit.io/AISHIK999/img/port5.jpg?updatedAt=1690137988161" alt="">
-            <label>Heart Disease Prediction</label>
-            <br>
-            <p>
-              Deep learning program and model to predict heart disease risk
-              <br>
-              [Python, Tensorflow, Scikit-learn]
-            </p>
-          </div>
-          <div class="hover-items">
-            <h3>Source</h3>
-            <div class="icons">
-              <a href="https://github.com/AISHIK999/Heart_Disease_Prediction" class="icon" target="_blank">
-                <i class="fab fa-github"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="portfolio-item">
-          <div class="image">
-            <img src="https://ik.imagekit.io/AISHIK999/img/port2.png?updatedAt=1690137988325" alt="">
-            <label>Reinforcement Snake</label>
-            <br>
-            <p>
-              Machine learning model to play the game of snake
-              <br>
-              [Python, Pytorch, Pygame]
-            </p>
-          </div>
-          <div class="hover-items">
-            <h3>Source</h3>
-            <div class="icons">
-              <a href="https://github.com/AISHIK999/Reinforcement_snake.git" class="icon" target="_blank">
-                <i class="fab fa-github"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="portfolio-item">
-          <div class="image">
-            <img src="https://ik.imagekit.io/AISHIK999/img/image_classifier.jpg?updatedAt=1692291110570" alt="">
-            <label>Image classifier</label>
-            <br>
-            <p>
-              A CNN machine learning program/model to classify images using ImageNet
-              <br>
-              [Python, Tensorflow, Keras]
-            </p>
-          </div>
-          <div class="hover-items">
-            <h3>Source</h3>
-            <div class="icons">
-              <a href="https://github.com/AISHIK999/Image_classifier" class="icon" target="_blank">
-                <i class="fab fa-github"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-
       </div>
-    </section>
+
+      <div class="project-item">
+        <div class="image">
+          <img src="https://ik.imagekit.io/AISHIK999/img/image_classifier.jpg?updatedAt=1692291110570" alt="">
+          <label>Image Classifier</label>
+        </div>
+        <div class="hover-items">
+          <h3>Image Classifier</h3>
+          <br>
+          <p>
+            CNN machine learning model that classifies images using ImageNet.
+          </p>
+          <div class="badge">
+            <img alt="python"
+                 src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"
+                 style="height: 2rem; width: 6rem">
+            <img alt="tensorflow"
+                 src="https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white"
+                 style="height: 2rem; width: 8rem">
+            <img alt="keras"
+                 src="https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white"
+                 style="height: 2rem; width: 5rem">
+          </div>
+
+          <div class="icons">
+            <a class="icon" href="https://github.com/AISHIK999/Reinforcement_snake/" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
 
 
-    <section class="container" id="blogs">
-      <div class="blogs-content">
+    </div>
+  </section>
+<!--  END PROJECTS-->
+
+<!--  CERTIFICATES-->
+  <section class="container" id="certificates">
+      <div class="certificate-section">
         <div class="main-title">
-          <h2><span>Certificates</span><span class="bg-text">Certificates</span></h2>
+          <h2><span>Certificates</span></h2>
           <p>
             Some of the certificates I have earned have been showcased here. Click the images to view.
           </p>
         </div>
-        <div class="blogs">
+        <div class="certificates">
 
-          <div class="blog">
+          <div class="certificate-item">
             <a href="https://drive.google.com/drive/folders/1oKukNbJ1SkvPjLyRZ9dePx77IPBbEsAX?usp=share_link"
               target="_blank">
               <img src="https://ik.imagekit.io/AISHIK999/img/Coursera%20BS6V3R9Q88BZ.png?updatedAt=1690141039628"
                 alt="">
             </a>
-            <div class="blog-text">
+            <div class="certificate-name">
               <h4>
                 IBM Machine Learning: Professional Certificate
               </h4>
@@ -436,14 +482,14 @@
             </div>
           </div>
 
-          <div class="blog">
+          <div class="certificate-item">
             <a href="https://drive.google.com/file/d/1SzUXqo54vXH2_p-agSwftfmCO4Tf-uhC/view?usp=sharing"
               target="_blank">
               <img
                 src="https://ik.imagekit.io/AISHIK999/img/Internship%20Certificate%20-%20Mr.%20Aishik%20Mukherjee-1.png?updatedAt=1694096650127"
                 alt="">
             </a>
-            <div class="blog-text">
+            <div class="certificate-name">
               <h4>
                 RPA Developer internship completion certificate
               </h4>
@@ -455,12 +501,12 @@
             </div>
           </div>
 
-          <div class="blog">
+          <div class="certificate-item">
             <a href="https://drive.google.com/drive/u/0/folders/1Q1YbAk-JsLimKEkHuX8F8vqgWqiJCKXI" target="_blank">
               <img src="https://ik.imagekit.io/AISHIK999/img/Coursera%20L2LMVAMQQ72J.png?updatedAt=1690141513334"
                 alt="">
             </a>
-            <div class="blog-text">
+            <div class="certificate-name">
               <h4>
                 Implementing RPA with Cognitive Automation and Analytics
               </h4>
@@ -472,14 +518,14 @@
             </div>
           </div>
 
-          <div class="blog">
+          <div class="certificate-item">
             <a href="https://drive.google.com/drive/folders/1mcvFKCM4NkJfNIDWjJUs2C_a4D0dtMWy?usp=sharing"
               target="_blank">
               <img
                 src="https://ik.imagekit.io/AISHIK999/img/(PATH)%20Become%20a%20Machine%20Learning%20Engineer.png?updatedAt=1690141223465"
                 alt="">
             </a>
-            <div class="blog-text">
+            <div class="certificate-name">
               <h4>
                 Become a Machine Learning Engineer
               </h4>
@@ -492,14 +538,14 @@
             </div>
           </div>
 
-          <div class="blog">
+          <div class="certificate-item">
             <a href="https://drive.google.com/file/d/1du0LPlmedGX_pTXMwCrIfheCXyCGkojR/view?usp=sharing"
               target="_blank">
               <img
                 src="https://ik.imagekit.io/AISHIK999/img/CertificateOfCompletion_Python%20Essential%20Training%202018.png?updatedAt=1690141223361"
                 alt="">
             </a>
-            <div class="blog-text">
+            <div class="certificate-name">
               <h4>
                 Python Essential Training
               </h4>
@@ -513,14 +559,16 @@
         </div>
       </div>
     </section>
+<!--  END CERTIFICATES-->
+
+<!--  CONTACT-->
     <section class="container contact" id="contact">
       <div class="contact-container">
         <div class="main-title">
-          <h2><span>Contact</span><span class="bg-text">Contact</span></h2>
+          <h2><span>Contact</span></h2>
         </div>
         <div class="contact-content-con">
           <div class="left-contact">
-            <h4>Contact information</h4>
             <p>
               Have a question? Want to chat? Or maybe want to send a multiplayer invite? Either way, my inbox is open to
               all !
@@ -615,33 +663,13 @@
         </div>
       </div>
     </section>
-  </main>
+<!--  END CONTACT-->
+</main>
 
-  <div class="controls">
-    <div class="control active-btn" data-id="home">
-      <i class="fas fa-home" style="color:var(--icons)"></i>
-    </div>
-    <div class="control" data-id="about">
-      <i class="fas fa-user" style="color:var(--icons)"></i>
-    </div>
-    <div class="control" data-id="portfolio">
-      <i class="fas fa-laptop" style="color:var(--icons)"></i>
-    </div>
-    <div class="control" data-id="blogs">
-      <i class="far fa-newspaper" style="color:var(--icons)"></i>
-    </div>
-    <div class="control" data-id="contact">
-      <i class="fas fa-envelope-open" style="color:var(--icons)"></i>
-    </div>
-  </div>
-  <div class="theme-btn">
-    <i class="fas fa-adjust" style="color:var(--icons)"></i>
-  </div>
-
-
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+<script src="js/bar.js"></script>
+<script src="js/vendor/modernizr.js"></script>
+<script src="js/navbar.js"></script>
+<script src="js/typing.js"></script>
 </body>
 
 </html>
